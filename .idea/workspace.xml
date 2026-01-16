@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="368fdba4-abb8-40e7-bf5d-94a73caba652" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.agent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.edit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/.ipynb_checkpoints/1_apple_autoencode-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/1_apple_autoencode.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/Apple.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/2_denoising_test.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/uitils.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/uitils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
