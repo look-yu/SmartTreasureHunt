@@ -1,4 +1,5 @@
-import DataLoader
+#import DataLoader
+from denoising_test import DataLoader
 import torch
 import transform
 

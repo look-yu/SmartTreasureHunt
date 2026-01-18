@@ -45,7 +45,9 @@ class FolderDataset(Dataset):
 
         return image
 
-    noisy_imgs=tensor_image + denoising_config.NOISE_FACTOR * torch.randn(*tensor_image.shape)
-        noisy_imgs=torch.clip(noisy_imgs,0.,1.)
-        return noisy_imgs, tensor_image
+     noisy_imgs=tensor_image + denoising_config.NOISE_FACTOR * torch.randn(*tensor_image.shape)
+
+     noisy_imgs=torch.clip(noisy_imgs,0.,1.)
+
+     return noisy_imgs, tensor_image
 

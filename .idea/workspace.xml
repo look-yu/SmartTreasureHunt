@@ -5,13 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="368fdba4-abb8-40e7-bf5d-94a73caba652" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/image_denoising/denoising_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image_denoising/denoising_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image_denoising/denoising_engine.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image_denoising/denoising_model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image_denoising/denoising_train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/2_denoising_test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test/2_denoising_test.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classification_test.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image_classification/classification_config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image_classification/classification_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image_classification/classification_engine.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image_classification/classification_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image_classification/classification_train.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image_similarity/similarity_config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image_similarity/similarity_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image_similarity/similarity_engine.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image_similarity/similarity_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image_similarity/similarity_train.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web_app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Smart Treasure Hunt.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Smart Treasure Hunt.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_denoising/denoising_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/image_denoising/denoising_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_denoising/denoising_train.py" beforeDir="false" afterPath="$PROJECT_DIR$/image_denoising/denoising_train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/1_apple_autoencode.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test/apple_autoencode.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/2_denoising_test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test/denoising_test.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,12 +64,12 @@
     &quot;assignee&quot;: &quot;look-yu&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/look-yu/study0.git&quot;,
-    &quot;accountId&quot;: &quot;f309a870-02cb-46f2-8d77-d75c241b9c15&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:look-yu/SmartTreasureHunt.git",
+    "accountId": "f309a870-02cb-46f2-8d77-d75c241b9c15"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -73,6 +86,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Python.__init__.executor": "Run",
     "Python.denoising_model.executor": "Run",
+    "Python.denoising_train.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -86,7 +100,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -95,7 +109,7 @@
       <recent name="E:\PycharmProjects\Smart Treasure Hunt\test" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.denoising_model">
+  <component name="RunManager" selected="Python.denoising_train">
     <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Smart Treasure Hunt" />
       <option name="ENV_FILES" value="" />
@@ -142,8 +156,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="denoising_train" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Smart Treasure Hunt" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/image_denoising" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/image_denoising/denoising_train.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.denoising_train" />
         <item itemvalue="Python.denoising_model" />
         <item itemvalue="Python.__init__" />
       </list>
@@ -187,17 +225,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/image_denoising/denoising_model.py</url>
-          <line>14</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
