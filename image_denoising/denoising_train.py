@@ -3,15 +3,16 @@ from denoising_test import DataLoader
 import torch
 import transform
 
-import denoising_model
 import denoising_engine
 import torchvision.transforms as T
-import denoising_data
-import denoising_config
 import numpy as np
 from tqdm import tqdm
 import torch.nn as nn
 import torch.optim as optim
+#自定义相关组件
+import denoising_model
+import denoising_data
+import denoising_config
 from common import utils
 
 def test(model, dataloader, device):
@@ -54,7 +55,7 @@ def test(model, dataloader, device):
     plt.tight_layout()
     plt.show()
 
-
+ 
 if __name__=='__main__':
  if torch.cuda.is_available():
     device='cuda'
@@ -75,15 +76,14 @@ if __name__=='__main__':
 
     #实例化完整数据集
     full_dataset= denoising_data.ImageDataset (image_dir ='../common/dataset/', transform=transform)
-
     train_size=int(0.75*len(full_dataset))
     val_size=len(full_dataset) -train_size
-
     #随机划分数据集
     train_dataset ,val_dataset = torch.utils.data.random_split(full_dataset, [train_size, val_size])
-
     #数据加载器配置阶段
     batch_size=32
+    
+    
     print('数据集创建完成，正在创建数据加载器...')
     #创建训练集数据加载器
     train_loader=DataLoader(
@@ -101,16 +101,12 @@ if __name__=='__main__':
 
     #初始化自编码器用于去噪
     denoiser=denoising_model.ConvDenoiser().to(device)
-
     #指定损失函数
     loss_fn=nn.MSELoss()
-
     #将模型移到指定设备
     denoiser.to(device)
-
     #指定优化器
     optimizer=torch.optim.Adam(denoiser.parameters(), lr=denoising_config.LEARNING_RATE)
-
     #初始化最佳损失之为一个很大的数
     min_loss =9999
     #开始训练模型

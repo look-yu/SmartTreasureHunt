@@ -22,5 +22,11 @@ class ConvDenoiser(nn.Module):
         # 前向传播过程
         x = F.relu(self.bn1(self.conv1(x)))
         x = F.relu(self.bn2(self.conv2(x)))
+
+
+
+
+
+
         x = self.conv3(x)
         return x

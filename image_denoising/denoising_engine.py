@@ -1,5 +1,11 @@
+
+#训练和测试
+#loder传进来
+
+
 __all__ = ["train_step", "val_step",'create_embedding']
 
+import denoiser
 import device
 #导入PyTorch核心库和神经网络模块
 import torch
@@ -9,7 +15,7 @@ def train_step(model, train_loader, optimizer, scheduler, num_epochs):
     #设置为训练模式
     total_loss = 0
     num_batches=0
-
+    denoiser.train()
     #便利数据加载器中的所有批次
     for train_img,targetr in train_loader:
         train_img=train_img.to(torch.float32)

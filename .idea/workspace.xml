@@ -5,26 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="368fdba4-abb8-40e7-bf5d-94a73caba652" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/classification_test.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image_classification/classification_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image_classification/classification_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image_classification/classification_engine.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image_classification/classification_model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image_classification/classification_train.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image_similarity/similarity_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image_similarity/similarity_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image_similarity/similarity_engine.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image_similarity/similarity_model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image_similarity/similarity_train.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web_app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Smart Treasure Hunt.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Smart Treasure Hunt.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image_denoising/denoising_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/image_denoising/denoising_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classification_test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test/classification_test.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_denoising/denoising_engine.py" beforeDir="false" afterPath="$PROJECT_DIR$/image_denoising/denoising_engine.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_denoising/denoising_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/image_denoising/denoising_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/image_denoising/denoising_train.py" beforeDir="false" afterPath="$PROJECT_DIR$/image_denoising/denoising_train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/1_apple_autoencode.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test/apple_autoencode.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/2_denoising_test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test/denoising_test.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_similarity/similarity_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/image_similarity/similarity_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_similarity/similarity_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/image_similarity/similarity_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_similarity/similarity_engine.py" beforeDir="false" afterPath="$PROJECT_DIR$/image_similarity/similarity_engine.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_similarity/similarity_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/image_similarity/similarity_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_similarity/similarity_train.py" beforeDir="false" afterPath="$PROJECT_DIR$/image_similarity/similarity_train.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jupyter Notebook" />
         <option value="Python Script" />
+        <option value="Jupyter Notebook" />
       </list>
     </option>
   </component>
@@ -64,12 +54,12 @@
     &quot;assignee&quot;: &quot;look-yu&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:look-yu/SmartTreasureHunt.git",
-    "accountId": "f309a870-02cb-46f2-8d77-d75c241b9c15"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:look-yu/SmartTreasureHunt.git&quot;,
+    &quot;accountId&quot;: &quot;f309a870-02cb-46f2-8d77-d75c241b9c15&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -87,6 +77,9 @@
     "Python.__init__.executor": "Run",
     "Python.denoising_model.executor": "Run",
     "Python.denoising_train.executor": "Run",
+    "Python.similarity_config.executor": "Run",
+    "Python.similarity_engine.executor": "Run",
+    "Python.similarity_model.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -108,31 +101,11 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\PycharmProjects\Smart Treasure Hunt\test" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\PycharmProjects\Smart Treasure Hunt\test" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.denoising_train">
-    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Smart Treasure Hunt" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/__init__.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.similarity_config">
     <configuration name="denoising_model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Smart Treasure Hunt" />
       <option name="ENV_FILES" value="" />
@@ -179,11 +152,82 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="similarity_config" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Smart Treasure Hunt" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/image_similarity" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/image_similarity/similarity_config.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="similarity_engine" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Smart Treasure Hunt" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/image_similarity" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/image_similarity/similarity_engine.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="similarity_model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Smart Treasure Hunt" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/image_similarity" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/image_similarity/similarity_model.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.similarity_config" />
+        <item itemvalue="Python.similarity_model" />
+        <item itemvalue="Python.similarity_engine" />
         <item itemvalue="Python.denoising_train" />
         <item itemvalue="Python.denoising_model" />
-        <item itemvalue="Python.__init__" />
       </list>
     </recent_temporary>
   </component>
