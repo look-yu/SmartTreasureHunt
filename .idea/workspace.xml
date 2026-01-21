@@ -6,15 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="368fdba4-abb8-40e7-bf5d-94a73caba652" name="Changes" comment="Changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classification_test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test/classification_test.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image_denoising/denoising_engine.py" beforeDir="false" afterPath="$PROJECT_DIR$/image_denoising/denoising_engine.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image_denoising/denoising_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/image_denoising/denoising_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image_denoising/denoising_train.py" beforeDir="false" afterPath="$PROJECT_DIR$/image_denoising/denoising_train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image_similarity/similarity_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/image_similarity/similarity_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image_similarity/similarity_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/image_similarity/similarity_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image_similarity/similarity_engine.py" beforeDir="false" afterPath="$PROJECT_DIR$/image_similarity/similarity_engine.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image_similarity/similarity_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/image_similarity/similarity_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image_similarity/similarity_train.py" beforeDir="false" afterPath="$PROJECT_DIR$/image_similarity/similarity_train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_classification/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/image_classification/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_classification/classification_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/image_classification/classification_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_classification/classification_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/image_classification/classification_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_classification/classification_engine.py" beforeDir="false" afterPath="$PROJECT_DIR$/image_classification/classification_engine.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_classification/classification_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/image_classification/classification_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_classification/classification_train.py" beforeDir="false" afterPath="$PROJECT_DIR$/image_classification/classification_train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/classification_test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test/classification_test.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +73,8 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Python.__init__.executor": "Run",
+    "Python.classification_model.executor": "Run",
+    "Python.classification_train.executor": "Run",
     "Python.denoising_model.executor": "Run",
     "Python.denoising_train.executor": "Run",
     "Python.similarity_config.executor": "Run",
@@ -93,7 +93,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -105,8 +105,8 @@
       <recent name="E:\PycharmProjects\Smart Treasure Hunt\test" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.similarity_config">
-    <configuration name="denoising_model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.classification_model">
+    <configuration name="classification_model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Smart Treasure Hunt" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -115,12 +115,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/image_denoising" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/image_classification" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/image_denoising/denoising_model.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/image_classification/classification_model.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -129,7 +129,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="denoising_train" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="classification_train" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Smart Treasure Hunt" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -138,12 +138,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/image_denoising" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/image_classification" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/image_denoising/denoising_train.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/image_classification/classification_train.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -223,11 +223,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.classification_model" />
+        <item itemvalue="Python.classification_train" />
         <item itemvalue="Python.similarity_config" />
         <item itemvalue="Python.similarity_model" />
         <item itemvalue="Python.similarity_engine" />
-        <item itemvalue="Python.denoising_train" />
-        <item itemvalue="Python.denoising_model" />
       </list>
     </recent_temporary>
   </component>
@@ -269,6 +269,17 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
+          <url>file://$PROJECT_DIR$/test/classification_test.ipynb</url>
+          <line>265</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
