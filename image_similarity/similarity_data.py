@@ -6,6 +6,14 @@ from PIL import Image  # 图像处理库
 import os  # 操作系统接口库
 from torch.utils.data import Dataset  # PyTorch数据集基类
 import pandas as pd
+# 在 classification_data.py 最顶部添加
+import sys
+import os
+
+# 把 image_classification 目录添加到系统路径（直接写死绝对路径，避免任何歧义）
+sys.path.append("E:\PycharmProjects\Smart Treasure Hunt\image_classification\classification_data.py")
+
+# 然后正常导入
 import classification_config
 
 # 正则表达式相关库

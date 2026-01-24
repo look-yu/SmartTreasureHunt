@@ -1,15 +1,15 @@
 # 定义模块的公开接口，仅暴露FolderDataset类
 __all__ = ["FolderDataset"]
 
-# 导入必要的库
-from PIL import Image  # 图像处理库
 import os  # 操作系统接口库
-from torch.utils.data import Dataset  # PyTorch数据集基类
-import pandas as pd
-import classification_config
-
 # 正则表达式相关库
 import re
+
+import pandas as pd
+# 导入必要的库
+from PIL import Image  # 图像处理库
+from torch.utils.data import Dataset  # PyTorch数据集基类
+
 
 def sorted_alphanumeric(data):
     """按字母数字混合顺序对文件名进行排序（例如：img1, img2, ..., img10）"""
@@ -62,3 +62,7 @@ class FolderDataset(Dataset):
             raise RuntimeError("transform参数不能为None，需指定预处理方法")
 
         return tensor_image, img_flag_id  # 返回图像张量和标签
+
+
+def seed_everything():
+    return None

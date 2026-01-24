@@ -1,15 +1,18 @@
 # 导入PyTorch核心库
+import seed_everything
 import torch
 # 导入自定义模型模块（包含ConvEncoder和ConvDecoder）
 import classification_model
 # 导入训练引擎模块（包含train_step和val_step）
-import classification_engine
-# 导入torchvision的图像变换模块
+
+
 import torchvision.transforms as T
-# 导入自定义数据加载模块
-import classification_data
-# 导入配置文件参数
-import classification_config
+# python
+
+from image_classification import classification_engine
+from image_classification import classification_data
+from image_classification import classification_config
+
 # 导入numpy用于数据处理
 import numpy as np
 # 导入进度条工具
@@ -21,7 +24,21 @@ import torch.optim as optim
 # 导入自定义工具函数（如seed_everything）
 from common import utils
 
-# 主程序入口
+
+import sys
+import os
+# 强制添加项目根目录到系统路径（写死绝对路径，避免任何路径问题）
+sys.path.append(r"E:\PycharmProjects\Smart Treasure Hunt")
+
+# ========== 第二步：精准导入需要的内容 ==========
+# 1. 先导入 classification_data 模块（里面有真正的 seed_everything 函数）
+import image_classification.classification_data as cd
+# 2. 导入 classification_config 模块（里面有 SEED）
+import image_classification.classification_config as cc
+
+from image_classification import classification_data
+import similarity_config
+
 if __name__ == "__main__":
     # 检测GPU可用性并设置设备
     if torch.cuda.is_available():
@@ -33,8 +50,7 @@ if __name__ == "__main__":
     print("设置训练分类模型的随机数种子, seed = {}".format(classification_config.SEED))
 
     # 调用工具函数设置全局随机种子（确保可复现性）
-    utils.seed_everything(classification_config.SEED)
-
+    seed_everything(classification_config.SEED)
     # 定义图像预处理流程
     transforms = T.Compose([
         T.Resize((64, 64)),  # 统一缩放到64x64分辨率

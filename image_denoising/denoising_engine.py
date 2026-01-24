@@ -1,8 +1,6 @@
 
 #训练和测试
 #loder传进来
-
-
 __all__ = ["train_step", "val_step",'create_embedding']
 
 import denoiser
@@ -43,17 +41,17 @@ def val_step(model, val_loader, optimizer, scheduler, num_epochs):
     num_batches=0
 
     with torch.no_grad():  #禁用梯度计算以节省内存
-        for val_img,targetr in val_loader:
-            val_img=val_img.to(torch.float32)
-            targetr=targetr.to(torch.float32)
-            val_img = val_img.cuda()
-            targetr = targetr.to(device)
+        for train_img, target_img in val_loader:
+            train_img = train_img.to(device)
+            target_img = target_img.to(device)
 
-            #前向传播
-            outputs = model(val_img)
-            loss = torch.nn.functional.mse_loss(outputs, targetr)
+            # 前向传播
+            output = denoiser(train_img)
+
+            # 计算损失
+            loss = loss_fn(output, target_img)
 
             total_loss += loss.item()
-            num_batches+=1
+            num_batches += 1
 
-    return total_loss/num_batches
+        return total_loss / num_batches
